@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import Statistics from './Statistics';
 import Section from './Section';
-import FeedbackOptions from '.components/FeedbackOptions';
-import Notification from '.components/Notification';
+import FeedbackOptions from './FeedbackOptions';
+import Notification from './Notification';
 
 import './App.css';
 
