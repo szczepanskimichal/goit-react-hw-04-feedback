@@ -1,6 +1,6 @@
 import css from './FeedbackOptions.module.css';
 
-const FeedbackOptions = ({ options, onLeaveFeedback }) => {
+export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <div className={css.button_wrapper}>
       {options.map((buttonName, index) => (
