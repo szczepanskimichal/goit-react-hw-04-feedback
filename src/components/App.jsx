@@ -3,10 +3,9 @@ import Statistics from './Statistics';
 import Section from './Section';
 import FeedbackOptions from './FeedbackOptions';
 import Notification from './Notification';
-
 import './App.css';
 
-export const App = () => {
+const App = () => {
   const [good, setGood] = useState(0);
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
@@ -32,7 +31,6 @@ export const App = () => {
   useEffect(() => {
     const totalFeedback = good + neutral + bad;
     setTotal(totalFeedback);
-
     if (totalFeedback > 0) {
       setPositivePercentage(Math.floor((good / totalFeedback) * 100));
     }
