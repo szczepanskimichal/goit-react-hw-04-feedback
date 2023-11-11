@@ -1,12 +1,6 @@
 import css from './Statistics.module.css';
 
-export const Statistics = ({
-  good,
-  neutral,
-  bad,
-  total,
-  positivePercentage,
-}) => {
+const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
   return (
     <div className={css.statistics}>
       <h2>Statistics</h2>
